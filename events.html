@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riverbend Yoga Studio | Events & Workshops</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Riverbend Yoga Studio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Monthly Workshops</h2>
+      <figure>
+        <img src="yoga-workshop_c.png" alt="Group of students participating in a weekend breathing workshop.">
+        <figcaption>Join our monthly mindfulness and deep-breathing weekend intensive.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Request a Spot</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="full-name">Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+          <small id="nameError" class="error-message" style="color: red; display: none;">Please enter your name.</small>
+        </div>
+
+        <div>
+          <label for="email-addr">Email:</label>
+          <input type="email" id="email-addr" name="email-addr" required>
+          <small id="emailError" class="error-message" style="color: red; display: none;">Please enter a valid email address.</small>
+        </div>
+
+        <div>
+          <label for="interest">Class or Event Interest:</label>
+          <select id="interest" name="interest" required>
+            <option value="">-- Please Choose --</option>
+            <option value="beginner">Beginner Yoga</option>
+            <option value="vinyasa">Vinyasa Flow</option>
+            <option value="workshop">Monthly Workshop</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="experience">Experience Level:</label>
+          <select id="experience" name="experience" required>
+            <option value="">-- Please Select --</option>
+            <option value="beginner">Complete Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="contact-method">Preferred Contact Method:</label>
+          <select id="contact-method" name="contact-method" required>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
